@@ -20,7 +20,7 @@ const argv = yargs
 	.alias('help', 'h')
 	.argv;
 
-var darkskyURL = `https://api.darksky.net/forecast/7ac723f82379a65c3447356285654e49/${argv.lat},${argv.lng}`;
+var darkskyURL = `https://api.darksky.net/forecast/Enter_Your_DarkSky_Key/${argv.lat},${argv.lng}`;
 
 axios.get(darkskyURL).then((response) => {
 	if( response.data.status === 'ZERO_RESULTS')
